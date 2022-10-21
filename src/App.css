@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+*{
+    background: #DEDEDE;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #f2ff41, #f9a825, #ff5722);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.color-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.colortile {
+    max-width: 40vw;
+    width: 60%;
+    height: 35%;
+    flex-shrink: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.answers-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 2em;
+    flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.answers-wrapper button {
+    border-radius: 5px;
+    background: #EFEFEF;
+    padding: 1em;
+    margin: 1em 3em 2em 3em;
+    transition: 0.1s ease-in-out
+}
+
+.answers-wrapper button:hover {
+    transform: scale(1.1);
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+    
+}
+
+.guess-result {
+    margin: 1em;
+    font-size: 3rem;
+}
+
+.correct {
+    color: Green
+}
+
+.incorrect {
+    color: red
 }
