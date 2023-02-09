@@ -36,7 +36,7 @@ const ColorTile = () => {
         if (clickedAnswer === color) {
             setStreak((prev) => prev + 1)
             setGuess(true)
-            setTimeout(pickColor, 600);
+            setTimeout(pickColor, 500);
         } else if (clickedAnswer !== color) {
             setGuess(false)
             setStreak(0)
@@ -45,8 +45,8 @@ const ColorTile = () => {
 
     return (
         <div className='color-wrapper'>
-            <h1 className='title'> Guess the Color!</h1>
-            <h2>Problem: #{stats}  |  Streak: {streak}</h2>
+            <h1 className='title'> GUESS THE COLOR!</h1>
+            <h2>PROBLEM: #{stats}  |  STREAK: {streak}</h2>
             <div className='colortile' style={{ backgroundColor: color }}></div>
             <div className='answers-wrapper'>
             {answers.map(answer => {

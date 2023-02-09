@@ -1,4 +1,5 @@
 *{
+    font-family: Helvetica, sans-serif;
     background: #DEDEDE;
     margin:0;
     padding:0;
@@ -16,15 +17,17 @@
 
 .color-wrapper {
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .colortile {
+    border-radius: 2.5%;
+    margin-top: 3rem;
     max-width: 40vw;
-    width: 60%;
+    width: 70%;
     height: 35%;
     flex-shrink: 1;
 }
@@ -38,18 +41,20 @@
 }
 
 .answers-wrapper button {
+    font-size: .9rem;
+    border: 2px solid gray;
     border-radius: 5px;
-    background: #EFEFEF;
     padding: 1em;
     margin: 1em 3em 2em 3em;
-    transition: 0.1s ease-in-out
+    transition: 0.15s ease-in-out
 }
 
 .answers-wrapper button:hover {
     transform: scale(1.1);
-    transition: 0.1s ease-in-out;
+    transition: 0.2s ease-in-out;
     cursor: pointer;
-    
+    border: 2px solid rgba(0, 0, 0, 0.75);
+    background: white;
 }
 
 .guess-result {
@@ -63,4 +68,24 @@
 
 .incorrect {
     color: red
+}
+
+.footer-wrap {
+    width: 95%;
+    margin: auto;
+}
+
+.github {
+    color:rgba(0, 0, 0, 0.75);
+    font-size: 2rem;
+    margin-left: 50%;
+    margin-right: 50%;
+    transition: 0.2s ease-in-out;
+}
+
+.github:hover {
+    transform: scale(1.1);
+    color: black;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
